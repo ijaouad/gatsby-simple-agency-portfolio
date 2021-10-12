@@ -27,7 +27,7 @@ export default projectDetails
 
 
 export const query = graphql`
-query MyQuery($slug: String) {
+query ProjectPage ($slug: String) {
     markdownRemark(frontmatter: {slug: {eq: $slug}}) {
       html
       frontmatter {

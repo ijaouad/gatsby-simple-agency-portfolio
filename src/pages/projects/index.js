@@ -32,7 +32,7 @@ const index = ({data}) => {
 export default index
 
 export const query = graphql`
-query ProjectPage {
+query ProjectsPage {
     projects: allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
         nodes {
           frontmatter {
